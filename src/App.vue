@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <h1>Monty Hall Problem</h1>
+    </div> 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+    font-family: "Montserrat";
 }
+
+body{
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(40, 60, 134), rgb(69, 162, 71)) repeat scroll 0% 0%;
+    color: #fff;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app h1{
+    padding: 20px;
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
 </style>
