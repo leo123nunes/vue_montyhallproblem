@@ -34,6 +34,12 @@ export default {
     --color-border-selected: 5px solid #cfd306;
     --color-selected: #cfd306;
 }
+
+*{
+    font-family: "Montserrat";
+    font-weight: bolder;
+}
+
 .door-area{
     display: flex;
     flex-direction: column;
@@ -41,9 +47,9 @@ export default {
     align-items: center;
     width: 180px;
     height:280px;
-    /* background-color: rgba(230, 76, 4, 0.253); */
-    border-bottom:10px solid rgb(126, 126, 126);
+    border-bottom:10px solid rgb(180, 180, 180);
     margin-bottom: 80px;
+    margin: 40px;
 }
 
 .door-frame{
@@ -57,7 +63,7 @@ export default {
     border-top: var(--color-border);
     border-right: var(--color-border);
     font-size: 2em;
-    z-index: 10;
+    z-index: 2;
 }
 
 .knob{
@@ -76,6 +82,7 @@ export default {
 
 #gift{
     position: absolute;
+    z-index: 1;
 }
 
 .door-frame.selected{
@@ -93,7 +100,9 @@ export default {
 }
 
 .door-frame.openDoor{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(37, 93, 59, 0.534);
+    z-index: 0;
+    /* background-color: rgba(28, 66, 43, 0); */
 }
 
 .knob.openDoor{
